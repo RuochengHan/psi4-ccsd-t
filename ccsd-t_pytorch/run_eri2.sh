@@ -3,7 +3,7 @@
 nmo=
 nocc=
 
-python read_F_ERI.py fockm terimol
+python read_F_ERI.py $FOCK $ERI2
 mv ERI.npy ERI2.npy
-python read_F_ERI.py fockm ferimol
+python read_F_ERI.py $FOCK $ERI1
 python CCSD_pytorch_read_F_ERI2.py $nmo $nocc
